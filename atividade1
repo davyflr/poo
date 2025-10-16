@@ -1,0 +1,106 @@
+#include <iostream>
+
+using namespace std;
+
+/*int main() {
+    int idade;
+
+    cout << "Informe sua idade: ";
+    cin >> idade;
+
+    if (idade >= 18){
+        cout << "Maior de idade";
+    }
+    else {
+        cout << "Menor de idade";
+    }
+}
+
+
+int main(){
+    int contador = 10;
+
+    while (contador >=1) {
+        cout << contador << endl;
+        contador --;
+    }
+}
+
+int main(){
+    int num;
+    int soma = 0;
+
+    cout << "Escreva um número: ";
+
+    while(true){
+        cin >> num;
+
+        if (num == 0){
+            break;
+        }
+        soma = soma + num;
+    }
+
+    cout << "Soma dos número digitados é " << soma << endl;
+    
+}
+
+int main() {
+    int num;
+
+    cout << "Digite um número: ";
+    cin >> num;
+
+    cout << "A tabuada do " << num << ":";
+
+    for (int i = 1; i <= 10; i = 1 + i) {
+        cout << num << ' x ' << i << " = " << num * i << endl;
+    }
+}
+
+int main() {
+    int num, positivos = 0;
+
+    for(int i = 1; i <= 10; i++){
+        cout << "Digite o " << i << "º número: ";
+        cin >> num;
+        
+        if (num > 0) {
+            positivos = positivos + 1;
+    }
+}
+    cout << "Quantidade de números positivos " << positivos << endl;
+    return 0;
+} */
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    double nota, somaNotas = 0.0;
+    int contador = 0;
+
+    cout << "Digite as notas dos alunos (digite uma nota negativa para encerrar):" << endl;
+
+    while (true) {
+        cout << "Digite uma nota: ";
+        cin >> nota;
+
+        if (nota < 0) {
+
+            if (contador > 0) {
+                double media = somaNotas / contador;
+                cout << "A média das notas válidas é: " << media << endl;
+            } else {
+                cout << "Nenhuma nota válida foi inserida." << endl;
+            }
+            return 0;
+        }
+
+        somaNotas += nota;
+        contador++;
+    }
+
+    return 0;
+}
