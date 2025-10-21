@@ -1,0 +1,33 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+class Animal {
+    public:
+    string nome;
+    string especie;
+    int idade;
+    int patas;
+    string cor;
+    string dieta;
+};
+
+int main(){
+    Animal Cachorro;
+    Cachorro.nome = "Spike";
+    Cachorro.especie = "Vira-lata";
+    Cachorro.idade = 5;
+    Cachorro.patas = 4;
+    Cachorro.cor = "Branco e marrom";
+    Cachorro.dieta = "O resto do almoço";
+
+    cout << "Caractéristicas do " << Cachorro.nome << ": " << endl;
+    cout << "Sua espécie: " << Cachorro.especie << endl;
+    cout << "Sua idade: " << Cachorro.idade << " anos" << endl;
+    cout << "Quantidade de patas: " << Cachorro.patas << endl;
+    cout << "Sua cor: " << Cachorro.cor << endl;
+    cout << "Sua dieta é: " << Cachorro.dieta << endl;
+
+
+}
